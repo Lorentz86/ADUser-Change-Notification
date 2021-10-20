@@ -1,9 +1,10 @@
 # This is my first extensive powershell script while learning powershell. 
 # Feel free to copy and adjust the code as you need it.
 #
-# I'm explainin the code for other new powershell users. 
+# I'm explaining bits of the code for new powershell users, like me at the time of writing this. 
 #
 #
+
 # Mailsettings, change to your own settings. 
 $smtp = "Mailserver"
 $From = "report@example.com"
@@ -13,10 +14,10 @@ $Subject = "Userchange Active Directory"
 # Get the current hour,day,month,year. Going to add this to the filename. 
 $date = Get-date -Format hhddMMyyyy
 
-# Filepath, Input your networkpath
+# Filepath, Input your networkpath.
 $filepath = "\\sv1\share\"
 
-# Referencefile, last change(s) are stored here. If you change filename, also change is here  
+# Refferencefile, last change(s) are stored here. If you change filename, also change is here  
 $refFile = (Get-ChildItem $filepath | Where-Object {$_.Name -like "aduser*.txt"}).FullName
 
 # Filename, watch the $date. You can change the filename if you want.  
