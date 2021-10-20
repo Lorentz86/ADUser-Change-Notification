@@ -1,7 +1,7 @@
 # This is my first extensive powershell script while learning powershell. 
 # Feel free to copy and adjust the code as you need it.
 #
-# I'm explaining bits of the code for new powershell users, like me at the time of writing this. 
+# I'm explaining bits of the code for new powershell users like me at the time of writing this. 
 #
 #
 
